@@ -128,7 +128,7 @@ class BillDeskPayment extends Component {
             if($splitdata==$code && isset($splitdata[14]) && $splitdata[14] == "0300"){
                 $result = true;
             }else{
-                $result = "false";
+                $result = false;
             }
         }
         return $result;        
