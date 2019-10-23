@@ -3,7 +3,7 @@ Billdesk Payment Gateway Integration for PHP Yii2.0 Framework
 
 How to configure
 ----------------
-1. Put the CCAvenueComponent.php file to``` /common/components```.
+1. Put the BillDeskPayment.php file to``` /common/components```.
 2. Add the component in ```main.php```. Sample code in main.php is given below
 ```
 <?php
@@ -25,7 +25,7 @@ return [
 ```
 
 In the above code , configure the redirect and cancel actions appropriately.
-In the redirect action or cancel action, you can extract the received parameters using 
+In the redirect action action, you can extract the received parameters using 
 ```
 $params = Yii::$app->billDeskPayment->extractParams();
 ```
